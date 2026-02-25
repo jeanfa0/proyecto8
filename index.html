@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo AI | Automatiza tu Flujo de Trabajo con IA</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">fluxo</span><span class="brand-accent">.ai</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#features">Producto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-it-works">Cómo Funciona</a></li>
+                    <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recursos.html">Recursos</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline" href="#">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-primary" href="#">Prueba Gratis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="badge-pill mb-4" data-aos="fade-down">
+                        <i class="fas fa-sparkles me-2"></i>
+                        NUEVO: Integración con ChatGPT-5
+                    </div>
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                        Tu equipo, sincronizado<br>
+                        <span class="gradient-text">por Inteligencia Artificial</span>
+                    </h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Fluxo centraliza tus herramientas, automatiza tareas repetitivas y libera el potencial de tu equipo. Diseñado bajo el estándar de <strong>Jean Avalos</strong>.
+                    </p>
+                    <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#" class="btn btn-primary btn-lg">
+                            Prueba Gratis 14 Días
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg ms-3">
+                            <i class="fas fa-play-circle me-2"></i>
+                            Ver Demo
+                        </a>
+                    </div>
+                    
+                    <!-- Dashboard Preview -->
+                    <div class="dashboard-preview" data-aos="fade-up" data-aos-delay="400">
+                        <div class="preview-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=700&fit=crop" alt="Dashboard Preview" class="img-fluid">
+                            <div class="preview-overlay">
+                                <div class="preview-stats">
+                                    <div class="stat-item" data-aos="fade-right" data-aos-delay="600">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span>+247% Productividad</span>
+                                    </div>
+                                    <div class="stat-item" data-aos="fade-left" data-aos-delay="700">
+                                        <i class="fas fa-clock"></i>
+                                        <span>15h/semana ahorradas</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <p class="trust-text">MÁS DE 2,000 EQUIPOS CONFÍAN EN FLUXO</p>
+            <div class="brands-grid">
+                <div class="brand-item"><i class="fab fa-spotify"></i></div>
+                <div class="brand-item"><i class="fab fa-slack"></i></div>
+                <div class="brand-item"><i class="fab fa-dropbox"></i></div>
+                <div class="brand-item"><i class="fab fa-airbnb"></i></div>
+                <div class="brand-item"><i class="fab fa-stripe"></i></div>
+                <div class="brand-item"><i class="fab fa-microsoft"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge-pill mb-3" data-aos="fade-down">
+                    <i class="fas fa-bolt me-2"></i>
+                    CARACTERÍSTICAS
+                </div>
+                <h2 class="section-title" data-aos="fade-up">
+                    Todo lo que necesitas para<br>
+                    <span class="gradient-text">automatizar tu flujo de trabajo</span>
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Herramientas poderosas diseñadas para equipos modernos
+                </p>
+            </div>
+
+            <div class="row g-4 mt-5">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon gradient-1">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>IA Inteligente</h3>
+                        <p>Automatización basada en aprendizaje automático que se adapta a tu forma de trabajar.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon gradient-2">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h3>Integraciones Sin Límites</h3>
+                        <p>Conecta con más de 500 herramientas que tu equipo ya usa a diario.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon gradient-3">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h3>Seguridad Empresarial</h3>
+                        <p>Encriptación de nivel bancario y cumplimiento total con GDPR y SOC 2.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon gradient-4">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Analytics en Tiempo Real</h3>
+                        <p>Dashboards intuitivos con métricas que realmente importan para tu negocio.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon gradient-5">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Colaboración Fluida</h3>
+                        <p>Trabaja en equipo sin fricción con herramientas de comunicación integradas.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon gradient-6">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Escalabilidad Total</h3>
+                        <p>Desde startups hasta empresas Fortune 500, Fluxo crece contigo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section" id="how-it-works">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge-pill mb-3" data-aos="fade-down">
+                    <i class="fas fa-lightbulb me-2"></i>
+                    CÓMO FUNCIONA
+                </div>
+                <h2 class="section-title" data-aos="fade-up">
+                    Empieza a automatizar en
+                    <span class="gradient-text">3 simples pasos</span>
+                </h2>
+            </div>
+
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="steps-container">
+                        <div class="step-item active">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h3>Conecta tus herramientas</h3>
+                                <p>Integra todas tus aplicaciones favoritas en minutos. Sin código, sin complicaciones.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h3>Configura automatizaciones</h3>
+                                <p>Usa nuestra IA para crear flujos de trabajo inteligentes o elige plantillas prediseñadas.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h3>Deja que Fluxo trabaje</h3>
+                                <p>Relájate mientras Fluxo maneja tareas repetitivas y optimiza tu productividad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="workflow-visual">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Workflow" class="img-fluid">
+                        <div class="workflow-badge">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Configuración en 5 minutos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-box">
+                        <h2 class="stat-number" data-count="2000">0</h2>
+                        <p class="stat-label">Equipos Activos</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-box">
+                        <h2 class="stat-number" data-count="500">0</h2>
+                        <p class="stat-label">Integraciones</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-box">
+                        <h2 class="stat-number" data-count="15">0</h2>
+                        <p class="stat-label">Horas Ahorradas/Semana</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-box">
+                        <h2 class="stat-number" data-count="99">0</h2>
+                        <p class="stat-label">% Satisfacción</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box" data-aos="zoom-in">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="cta-title">¿Listo para transformar tu flujo de trabajo?</h2>
+                        <p class="cta-subtitle">Únete a miles de equipos que ya están ahorrando tiempo con Fluxo AI</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="#" class="btn btn-light btn-lg">
+                            Comenzar Ahora
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <span class="brand-text">fluxo</span><span class="brand-accent">.ai</span>
+                    </div>
+                    <p class="footer-desc">Automatización inteligente para equipos que no tienen tiempo que perder.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Producto</h5>
+                    <ul class="footer-links">
+                        <li><a href="#features">Características</a></li>
+                        <li><a href="precios.html">Precios</a></li>
+                        <li><a href="#">Integraciones</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Compañía</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Recursos</h5>
+                    <ul class="footer-links">
+                        <li><a href="recursos.html">Centro de Ayuda</a></li>
+                        <li><a href="#">Documentación</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Estado</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Licencias</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fluxo AI Inc. | <strong>Diseñado por Jean Avalos</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
